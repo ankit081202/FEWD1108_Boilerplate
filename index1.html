@@ -2,29 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
   <link rel="stylesheet" href="style.css">
-  <title>Debugging HTML</title>
 </head>
 <body>
-  <div class="container">
-    <!-- Iteration 1 : Make sure all the tags are closed  -->
-    <h1>Important Formulas
-    <div class="math">
-      <h2>Maths</h2>
-      <h3><strong>(a+b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + 2*a*b</strong></h3>
+  <div class="wrapper">
+    <!-- Iteration 1: close the nav tag after the navigation bar is done -->
+    <nav class="navbar">
+      <img class="logo" src="./assets/logo.png">
+      <!-- Iteration 2: A tag is closed in the wrong order. Identify the tag and close it in the right place -->
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <!-- Iteration 3: A tag is closed in the wrong order. Identify the tag and close it in the right place -->
+      <li><a href="#">Feedback</li></a>
+    <div class="center">
+      <!-- Iteration 4,5 : Even though there is no difference, 2 tags are closed in the wrong order. It is semantically wrong. -->
+      <h1>Welcome To Cascade</h2>
+      <h2>Create Something New</h1>
+      <div class="buttons">
+        <button Explore More</button>
+        <button class="btn2">Subscribe Us</button>
+      </div>
     </div>
-    <div class="chemistry">
-        <h2>Chemistry</h2>
-        <!-- Iteration 2 : Make sure all the tags are placed in the correct order  -->
-        <h3>H<sub>2 + O</sub><sub>2</sub> = 2H<sub>2</sub>O</h3>
-    </div>
-    <div class="physics">
-        <h2>Physics</h2>
-        <!-- Iteration 3 : Make sure all the tags are placed in the correct order  -->
-        <h3>Kinetic energy is directly proportional to the mass of the object and to the square of its velocity: 1/2 * <var>m* <var>v</var>2</sup></h3>
-    </div>
-  </div>
 </body>
 </html>
